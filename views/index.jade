@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  form(action="/", method="post")
+      label Input something
+      br
+      br
+      textarea(name="article" cols="100" rows="20")
+      br
+      br
+      input(type="submit", value="Submit")
+  
+  h1= article ? "Your Content" : ""
+  p= article ? article : ""
